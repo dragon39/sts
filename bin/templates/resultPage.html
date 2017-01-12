@@ -5,6 +5,8 @@
 <title>Witaj w Twitterze!</title>
 </head>
 <body>
-	<span th:text="${message}">Witaj w HTML!</span>
+	<ul>
+	<li th:each="tweet : ${tweets}" th:text="${tweet}"> Jakiś tweet </li>
+	</ul>
 </body>
 </html>
